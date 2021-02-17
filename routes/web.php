@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello-world', function () {
+    return view('test.helloworld');
+});
+
+Route::get('/happy-new-year-2021',function () {
+    echo "<h1>An khang, Thịnh vượng, Vạn sự như ý, Có người yêu, Lương tăng nhanh, có ngành tay trái nữa ^^</h1>";
+});
+
+Route::get('/logging', 'LoggingController@index');
+
+
